@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测试</title>
+  <link rel="stylesheet" href="./css/pure-min.css">
+  <link rel="stylesheet" href="./css/grids-responsive-min.css">
+  <link rel="stylesheet" href="./css/diy.css">
+
+</head>
+
+<body>
+  <form class="pure-form pure-form-stacked" method="POST" enctype="multipart/form-data"
+    action="http://127.0.0.1:8080/img">
+    <fieldset>
+      <input type="hidden" id="title" name="title" value="">
+      <input name="img" type="file" accept="image/*" placeholder="chose img"
+        onchange="setName(this)">
+      <button type="submit" class="pure-button pure-button-primary">
+        upload
+      </button>
+    </fieldset>
+  </form>
+
+</body>
+
+<script>
+  function setName(img) {
+    document.getElementsByName('title')[0].value = img.files[0].name;
+    console.log(document.getElementsByName('title')[0].value)
+  }
+</script>
+
+</html>
