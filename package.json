@@ -21,7 +21,7 @@
     "typings": "^1.0.4"
   },
   "dependencies": {
-    "mongoose": "^4.5.1",
+    "mongoose": "^5.7.6",
     "restify": "^4.1.0"
   }
 }
